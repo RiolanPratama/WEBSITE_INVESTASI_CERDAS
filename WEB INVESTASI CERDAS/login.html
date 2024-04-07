@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Investasi Cerdas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="login-page">
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand">Investasi Cerdas</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studi-kasus.html">Studi Kasus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="analisis-pasar.html">Analisis Pasar</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container1 mt-4">
+        <div class="container">
+            <form id="loginForm" class="login-form" onsubmit="validateLogin(event)">
+                <h2 class="text-center mb-4">Login</h2>
+                <div class="form-group">
+                    <label for="username">Email</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+                <button href="index.html" class="back-button">Back</button>
+                <div id="message" class="mt-3 text-center"></div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Investasi Cerdas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

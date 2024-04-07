@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Investasi - Investasi Cerdas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand">Investasi Cerdas</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studi-kasus.html">Studi Kasus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="analisis-pasar.html">Analisis Pasar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <section>
+            <h2 class="mb-4">Mendaftar Investasi</h2>
+            <form id="profilForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Masukkan password Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="investasi">Hal yang Ingin Diinvestasikan</label>
+                    <textarea class="form-control" id="investasi" rows="3" placeholder="Jelaskan hal yang ingin Anda investasikan" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tujuan">Tujuan Investasi</label>
+                    <textarea class="form-control" id="tujuan" rows="3" placeholder="Jelaskan tujuan dari investasi Anda" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="periode">Periode Investasi</label>
+                    <input type="text" class="form-control" id="periode" placeholder="Masukkan periode investasi yang diinginkan" required>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah">Jumlah Investasi</label>
+                    <input type="number" class="form-control" id="jumlah" placeholder="Masukkan jumlah investasi yang direncanakan">
+                </div>                
+                <div class="form-group">
+                    <label for="risiko">Toleransi Risiko</label>
+                    <select class="form-control" id="risiko" required>
+                        <option value="">Pilih Toleransi Risiko</option>
+                        <option value="rendah">Rendah</option>
+                        <option value="sedang">Sedang</option>
+                        <option value="tinggi">Tinggi</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary">Simpan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Investasi Cerdas. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('profilForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            alert('Data Investasi berhasil disimpan!');
+
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
